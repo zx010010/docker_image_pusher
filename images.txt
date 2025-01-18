@@ -7,7 +7,6 @@ xhofe/alist:latest
 vikunja/vikunja
 linuxserver/heimdall
 difegue/lanraragi
-mysqljs/mysql
 homeassistant/home-assistant
 deluan/navidrome
 jlesage/nginx-proxy-manager
