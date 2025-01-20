@@ -13,3 +13,6 @@ deluan/navidrome
 jlesage/nginx-proxy-manager
 hectorqin/reader
 vaultwarden/server
+nocodb/nocodb
+linuxserver/jackett
+netdata/netdata
