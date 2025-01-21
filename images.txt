@@ -16,3 +16,4 @@ vaultwarden/server
 nocodb/nocodb
 linuxserver/jackett
 netdata/netdata
+adolfintel/speedtest
