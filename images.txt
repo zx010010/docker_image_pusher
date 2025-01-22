@@ -17,3 +17,6 @@ nocodb/nocodb
 linuxserver/jackett
 netdata/netdata
 adolfintel/speedtest
+nastool/nas-tools
+80x86/filebrowser
+allanpk716/chinesesubfinder
