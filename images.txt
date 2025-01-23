@@ -20,4 +20,4 @@ adolfintel/speedtest
 nastool/nas-tools
 80x86/filebrowser
 allanpk716/chinesesubfinder
-rehiy/dailyhot-docker
+rehiy/dailyhot
