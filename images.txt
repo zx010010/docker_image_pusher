@@ -21,3 +21,5 @@ nastool/nas-tools
 80x86/filebrowser
 allanpk716/chinesesubfinder
 rehiy/dailyhot
+binhex/arch-jellyfin
+jellyfin/jellyfin
