@@ -24,3 +24,5 @@ rehiy/dailyhot
 binhex/arch-jellyfin
 jellyfin/jellyfin
 whyour/qinglong
+kasmweb/chromium
+portainer/portainer
