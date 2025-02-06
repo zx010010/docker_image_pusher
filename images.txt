@@ -27,3 +27,4 @@ whyour/qinglong
 portainer/portainer
 elestio/uptime-kuma
 antonyleons/ward
+linuxserver/chromium
