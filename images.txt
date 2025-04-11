@@ -33,3 +33,4 @@ easychen/rsspush
 ajnart/homarr
 80x86/qbittorrent
 adolfintel/speedtest
+wangqiru/ttrss
