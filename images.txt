@@ -30,3 +30,4 @@ antonyleons/ward
 linuxserver/chromium
 diygod/rsshub
 easychen/rsspush
+ajnart/homarr
