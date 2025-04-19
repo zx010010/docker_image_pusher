@@ -34,5 +34,6 @@ diygod/rsshub
 easychen/rsspush
 ajnart/homarr
 80x86/qbittorrent
+linuxserver/qbittorrent
 adolfintel/speedtest
 wangqiru/ttrss
