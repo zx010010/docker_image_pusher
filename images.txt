@@ -16,7 +16,7 @@ cnk3x/xunlei
 shmilyin/nas-tools:2.8.3
 whyour/qinglong
 portainer/portainer-ce
-mysql：8.0
+mysql
 ghcr.io/homarr-labs/homarr
 vikunja/vikunja
 linuxserver/heimdall
