@@ -46,3 +46,4 @@ ajnart/homarr
 linuxserver/qbittorrent
 adolfintel/speedtest
 wangqiru/ttrss
+
