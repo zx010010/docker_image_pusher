@@ -5,8 +5,8 @@ on:
   push:
     branches: [ main ]
   schedule:
-    - cron: '00 20 * * ?'
-
+    # 注意：这里原来的 '00 20 * * ?' 是非法的，GitHub Actions 不支持 '?'，必须改成 '*'
+    - cron: '00 20 * * *'
 
 env:
   ALIYUN_REGISTRY: "${{ secrets.ALIYUN_REGISTRY }}"
@@ -15,10 +15,13 @@ env:
   ALIYUN_REGISTRY_PASSWORD: "${{ secrets.ALIYUN_REGISTRY_PASSWORD }}"
 
 jobs:
-
   build:
     name: Pull
     runs-on: ubuntu-latest
+    # 【新增】赋予读取权限，防止 Post Checkout 阶段报错
+    permissions:
+      contents: read
+    
     steps:
     - name: Before freeing up disk space
       run: |
@@ -31,14 +34,10 @@ jobs:
     - name: Maximize build space
       uses: easimon/maximize-build-space@master
       with:
-
         root-reserve-mb: 2048
         swap-size-mb: 128
         remove-dotnet: 'true'
         remove-haskell: 'true'
-        # 如果空间还是不够用，可以把以下开启，清理出更多空间
-        # remove-android: 'true'
-        # remove-codeql: 'true'
         build-mount-path: '/var/lib/docker/'
 
     - name: Restart docker
@@ -52,7 +51,11 @@ jobs:
         echo "=============================================================================="
 
     - name: Checkout Code
-      uses: actions/checkout@v4
+      # 【修改】从 v4 更新到 v5
+      uses: actions/checkout@v5
+      with:
+        # 【新增】强制清理工作目录，防止 Runner 环境残留导致报错
+        clean: true
 
     - name: Docker Setup Buildx
       uses: docker/setup-buildx-action@v3
